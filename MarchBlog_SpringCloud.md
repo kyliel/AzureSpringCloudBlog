@@ -39,7 +39,7 @@ As some apps are CPU-bound, and others are memory-bound, you can pick up the met
 
 In Azure Spring Cloud, an App is an abstraction of one business app or one microservice. One version of code or binary deployed as the App runs in a Deployment. You can have one active deployment for production and the other deployment for staging. You can configure Autoscale setting for each deployment.
 
-![Figure 5](https://github.com/kyliel/AzureSpringCloudBlog/blob/master/Images-vnet-autoscaler-ga_202103/Figure45_Scale.PNG)  
+![Figure 5](https://github.com/kyliel/AzureSpringCloudBlog/blob/master/Images-vnet-autoscaler-ga_202103/Figure5_Scale.PNG)  
 *Figure 5: Autoscale settings of Azure Spring Cloud App/Deployment*
 
 You can learn how to [set up Autoscale for Azure Spring Cloud Apps/Deployments](https://docs.microsoft.com/azure/spring-cloud/spring-cloud-tutorial-setup-autoscale). And you also can automate Autoscaling Azure Spring Cloud Apps/Deployments with Terraform. Below is an example. 
