@@ -16,15 +16,16 @@ Also, we’ve enabled bringing your own route table for custom route management.
 For example,  if your custom subnet contains a route table when you create an Azure Spring Cloud service instance, Azure Spring Cloud acknowledges the existing route table during service creation and adds/updates rules accordingly. If your custom subnet does not contain a route table, Azure Spring Cloud creates one for you and adds rules to it throughout the service lifecycle. 
 
 ![Figure 1](https://github.com/kyliel/AzureSpringCloudBlog/blob/master/Images-vnet-autoscaler-ga_202103/Figure1_VNET.png) 
-*Figure 1: Azure Spring Cloud in a managed virtual network with custom route table*
+<span style="color:gray">*Figure 1: Azure Spring Cloud in a managed virtual network with custom route table*</span>.
+
 
 Azure Spring Cloud also provides self-diagnostics to help you troubleshoot networking connectivity issues such as misconfiguring private DNS zones. 
  
 ![Figure 2](https://github.com/kyliel/AzureSpringCloudBlog/blob/master/Images-vnet-autoscaler-ga_202103/Figure2_VNET.PNG) 
-Figure 2: Diagnostics page to diagnose issue such as networking connectivity** 
+<span style="color:gray">*Figure 2: Diagnostics page to diagnose issue such as networking connectivity*</span>.
 
 ![Figure 3](https://github.com/kyliel/AzureSpringCloudBlog/blob/master/Images-vnet-autoscaler-ga_202103/Figure3_VNET.png)  
-*Figure 3: Examples of DNS Resolution self-diagnostics*
+<span style="color:gray">*Figure 3: Examples of DNS Resolution self-diagnostics*</span>.
 
 To learn more, get started with [Deploy Azure Spring Cloud in a Virtual Network](https://docs.microsoft.com/azure/spring-cloud/spring-cloud-tutorial-deploy-in-azure-virtual-network). 
 
@@ -33,14 +34,14 @@ To learn more, get started with [Deploy Azure Spring Cloud in a Virtual Network]
 With the Azure Spring Cloud Autoscale feature, you can automate the upscaling or downscaling of the application to meet demand at peak times, and scale back when it is not necessary to reduce operational cost. Once Autoscale is enabled, the service will take care of your underlying infrastructure, and the load on your apps.
 
 ![Figure 4](https://github.com/kyliel/AzureSpringCloudBlog/blob/master/Images-vnet-autoscaler-ga_202103/Figure4_Scale.png) 
-*Figure 4: Metrics with upscaling and downscaling* 
+<span style="color:gray">*Figure 4: Metrics with upscaling and downscaling* </span>.
 
 As some apps are CPU-bound, and others are memory-bound, you can pick up the metric and define scaling rules based on its value. If your traffic always skyrockets at 9am Monday through Friday, you can schedule more aggressive autoscaling targets for the work week.
 
 In Azure Spring Cloud, an App is an abstraction of one business app or one microservice. One version of code or binary deployed as the App runs in a Deployment. You can have one active deployment for production and the other deployment for staging. You can configure Autoscale setting for each deployment.
 
 ![Figure 5](https://github.com/kyliel/AzureSpringCloudBlog/blob/master/Images-vnet-autoscaler-ga_202103/Figure5_Scale.PNG)  
-*Figure 5: Autoscale settings of Azure Spring Cloud App/Deployment*
+<span style="color:gray">*Figure 5: Autoscale settings of Azure Spring Cloud App/Deployment*</span>.
 
 You can learn how to [set up Autoscale for Azure Spring Cloud Apps/Deployments](https://docs.microsoft.com/azure/spring-cloud/spring-cloud-tutorial-setup-autoscale). And you also can automate Autoscaling Azure Spring Cloud Apps/Deployments with Terraform. Below is an example. 
 
